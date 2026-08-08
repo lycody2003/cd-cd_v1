@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  client:
+    build:
+      context: .
+      dockerfile: docker/dev/Dockerfile
+      args:
+        VITE_API_URL: http://localhost:3004/api
+        VITE_SOCKET_URL: http://localhost:3004
+    container_name: lychat_client
+    restart: unless-stopped
+    ports:
+      - "3002:80"
+    networks:
+      - lychat_network
+
+networks:
+  lychat_network:
+    driver: bridge
