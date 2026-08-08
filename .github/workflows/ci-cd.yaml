@@ -65,7 +65,7 @@ jobs:
           file: docker/prod/Dockerfile
           push: true
 
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/arm64
 
           build-args: |
             VITE_API_URL=http://192.168.252.130:30008/api
