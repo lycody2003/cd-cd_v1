@@ -68,8 +68,8 @@ jobs:
           platforms: linux/arm64
 
           build-args: |
-            VITE_API_URL=http://192.168.252.130:30008/api
-            VITE_SOCKET_URL=http://192.168.252.130:30008
+            VITE_API_URL=http://api.lychat.com/api
+            VITE_SOCKET_URL=http://api.lychat.com
 
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/lychat_client_side:1.0.2
