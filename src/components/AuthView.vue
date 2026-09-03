@@ -3,7 +3,7 @@
     <div class="auth-card">
       <div class="brand">
         <div class="logo">Ly</div>
-        <h1>Lychat</h1>
+        <h1>Lychat v-1.0.3</h1>
         <p>Chat smarter, connect faster.</p>
       </div>
 
